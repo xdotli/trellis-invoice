@@ -1,0 +1,60 @@
+{
+    "model": "trellis-premium",
+    "mode": "document",
+    "operations": [
+        {
+            "column_name": "invoice_no",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "extract the number of invoice"
+        },
+        {
+            "column_name": "invoice_date",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "the issue date of invoice, leave it in the origianl format"
+        },
+        {
+            "column_name": "seller",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "address of of the seller"
+        },
+        {
+            "column_name": "seller_tax_id",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "tax id of the seller"
+        },
+        {
+            "column_name": "iban",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "iban sequence number"
+        },
+        {
+            "column_name": "client",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "extract address of of the client"
+        },
+        {
+            "column_name": "client_tax_id",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "tax id of the client"
+        },
+        {
+            "column_name": "items",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "extract the table of the items in the format of list of dictionary, the header of the dict is item_desc, item_qty, item_net_price, item_net_worth, item_vat, item_gross_worth"
+        },
+        {
+            "column_name": "summary",
+            "column_type": "text",
+            "transform_type": "extraction",
+            "task_description": "extract the table of the summary in the format of dictionary, the header of the dict is total_net_worth, total_vat, total_gross_worth, do not remove the dollar sign"
+        }
+    ]
+}
